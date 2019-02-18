@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('*', (req, res) => {
-
+    //hoge
     
     const numbers = fizzbuzz(req.query.count);
     res.render("index.ejs", { numbers: numbers });
